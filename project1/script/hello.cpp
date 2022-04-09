@@ -2,10 +2,12 @@
 
 namespace gazebo{
     class WorldPluginRobot : public WorldPlugin{
-        public : WorldPluginRobot():WorldPlugin(){
+        public : WorldPluginRobot():WorldPlugin()
+        {
             printf("Welcome to JK's World!\n");
         }
-        public: void Load(physics::WorldPtr _world, sdf::ElementPtr _sdf){
+        public: void Load(physics::WorldPtr _world, sdf::ElementPtr _sdf)
+        {
 
         }
     };
