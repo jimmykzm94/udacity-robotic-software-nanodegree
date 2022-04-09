@@ -1,3 +1,0 @@
-export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/workspace/project1/build
-
-# Change in world file, after default <plugin name='hello' filename='libhello.so'/>
