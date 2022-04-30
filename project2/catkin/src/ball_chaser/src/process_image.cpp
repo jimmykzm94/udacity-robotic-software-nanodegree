@@ -44,27 +44,36 @@ void process_image_callback(const sensor_msgs::Image img)
     // Then, identify if this pixel falls in the left, mid, or right side of the image
     // Depending on the white ball position, call the drive_bot function and pass velocities to it
     // Request a stop when there's no white ball seen by the camera
+    // Note: step is 3 x width, bytes sequence r,g,b
+    // so i is increment by 3 step
     int j = 0;
-    for (int i = 0; i < img.height * img.step; i++)
+    for (int i = 0; i < img.height * img.step; i+=3)
     {
         // Check white ball
-        if (img.data[i] == white_pixel)
+        if (img.data[i] == white_pixel &&
+            img.data[i+1] == white_pixel &&
+            img.data[i+2] == white_pixel)
         {
-            float pos = (float)j / img.step;
+            float pos = (float)(i % img.step) / img.step;
             // Check left
-            if(pos < 0.333)
+            if(pos < 0.3)
                 position = Left;
             // Check forward
-            else if(pos < 0.666)
+            else if(pos < 0.7)
                 position = Forward;
             // Check right
             else
                 position = Right;
 
-            ROS_INFO("Drive robot: Linear_x: %f Angular_z: %f", RobotVelocity[position][0],RobotVelocity[position][1]);
-            break;
+            // Make sure the white ball is near OR prevent false positive
+            // Set threshold of 50
+            j++;
+            if(j > 50){
+                ROS_INFO("Drive robot: Linear_x: %f Angular_z: %f", RobotVelocity[position][0],RobotVelocity[position][1]);
+                ROS_INFO("pos %f",pos);
+                break;
+            }
         }
-        j = (j + 1) % img.step;
     }
 
     drive_robot(RobotVelocity[position][0],
