@@ -4,7 +4,11 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/ros/melodic/include/"
+                "/opt/ros/melodic/include/",
+                "/opt/ros/kinetic/include/",
+                "/usr/include/ignition/math2",
+                "/usr/include/sdformat-4.4",
+                "/usr/include/gazebo-7"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
