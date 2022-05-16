@@ -8,10 +8,24 @@ How to run project 1:
 1. Run `sh run.sh`, uncomment the script if needed.
 
 ## Project 2
-To be added
+Ball chaser
+1. Open a terminal, source and run `roslaunch my_robot world.launch` to launch gazebo map, urdf robot.
+2. Open another terminal, run `roslaunch ball_chaser drive_robot.launch` to auto-chase the white ball.
 
 ## Project 3
-To be added
+### Create map
+Run `roslaunch pgm_map_creator request_publisher.launch`
+
+### Submodule
+1. teleop_twist_keyboard (update submodule before using it)
+
+### Run simulation
+Open terminal and type:
+`roslaunch my_robot world.launch`
+Open another terminal and type:
+`roslaunch my_robot amcl.launch`
+Open another terminal to use keyboard control:
+`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
 
 ## Project 4
 1. Download `rtabmap_2.db` (https://drive.google.com/file/d/1SVv8yVBpZxNaDHM_4R6DqleEk7AsJXCw/view?usp=sharing).
