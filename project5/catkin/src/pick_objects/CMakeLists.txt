@@ -194,6 +194,8 @@ include
 
 add_executable(pick_objects src/pick_objects.cpp)
 target_link_libraries(pick_objects ${catkin_LIBRARIES})
+add_executable(pick_objects_home src/pick_objects_home.cpp)
+target_link_libraries(pick_objects_home ${catkin_LIBRARIES})
 
 #############
 ## Testing ##
