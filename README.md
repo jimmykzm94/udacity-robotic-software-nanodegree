@@ -32,3 +32,12 @@ Open another terminal to use keyboard control:
 2. Open a terminal, source and run `roslaunch my_robot world.launch` to launch gazebo map, urdf robot and teleop.
 3. Open another terminal, run `roslaunch my_robot mapping.launch` to save mapping.
 4. Run `rtabmap-databaseViewer <DB_FILENAME>` to view mapping.
+
+## Project 5
+1. Prerequisite:
+    1. Install `sudo apt install ros-kinetic-openslam-gmapping` (or rosdep -i install PACKAGE)
+    2. Install `sudo apt install ros-kinetic-joy` (or rosdep -i install PACKAGE)
+    3. Install `sudo apt install ros-kinetic-turtlebot-*` (or rosdep -i install PACKAGE)
+    4. Install `sudo apt install ros-kinetic-kobuki-*` (or rosdep -i install PACKAGE)
+    5. Update submodule (if clone)
+2. Run `catkin_make` to build packages, then run `sh home_service.sh`
