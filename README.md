@@ -35,7 +35,9 @@ Open another terminal to use keyboard control:
 
 ## Project 5
 1. Prerequisite:
-    1. Install `sudo apt install ros-kinetic-openslam-gmapping`
-    2. Install `sudo apt install ros-kinetic-joy`
-    3. Install `sudo apt install ros-kinetic-turtlebot-*`
-    4. Install `sudo apt install ros-kinetic-kobuki-*`
+    1. Install `sudo apt install ros-kinetic-openslam-gmapping` (or rosdep -i install PACKAGE)
+    2. Install `sudo apt install ros-kinetic-joy` (or rosdep -i install PACKAGE)
+    3. Install `sudo apt install ros-kinetic-turtlebot-*` (or rosdep -i install PACKAGE)
+    4. Install `sudo apt install ros-kinetic-kobuki-*` (or rosdep -i install PACKAGE)
+    5. Update submodule (if clone)
+2. Run `catkin_make` to build packages, then run `sh home_service.sh`
