@@ -26,7 +26,7 @@ int main(int argc, char** argv){
   pickUp.target_pose.header.stamp = ros::Time::now();
 
   // Define a position and orientation for the robot to reach
-  pickUp.target_pose.pose.position.x = 1.0;
+  pickUp.target_pose.pose.position.x = 0.0;
   pickUp.target_pose.pose.position.y = -1.0;
   pickUp.target_pose.pose.orientation.w = 2.0;
 
@@ -47,8 +47,8 @@ int main(int argc, char** argv){
     dropGoal.target_pose.header.stamp = ros::Time::now();
 
     // Define a position and orientation for the robot to reach
-    dropGoal.target_pose.pose.position.x = -1.0;
-    dropGoal.target_pose.pose.position.y = 1.0;
+    dropGoal.target_pose.pose.position.x = -1.5;
+    dropGoal.target_pose.pose.position.y = 1.5;
     dropGoal.target_pose.pose.orientation.w = 2.0;
 
     ROS_INFO("Dropping");
