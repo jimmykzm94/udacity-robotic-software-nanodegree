@@ -39,5 +39,4 @@ Open another terminal to use keyboard control:
     2. Install `sudo apt install ros-kinetic-joy` (or rosdep -i install PACKAGE)
     3. Install `sudo apt install ros-kinetic-turtlebot-*` (or rosdep -i install PACKAGE)
     4. Install `sudo apt install ros-kinetic-kobuki-*` (or rosdep -i install PACKAGE)
-    5. Update submodule (if clone)
 2. Run `catkin_make` to build packages, then run `sh home_service.sh`
