@@ -34,9 +34,14 @@ Open another terminal to use keyboard control:
 4. Run `rtabmap-databaseViewer <DB_FILENAME>` to view mapping.
 
 ## Project 5
-1. Prerequisite:
+1. Prerequisite to run turtlebot example:
     1. Install `sudo apt install ros-kinetic-openslam-gmapping` (or rosdep -i install PACKAGE)
     2. Install `sudo apt install ros-kinetic-joy` (or rosdep -i install PACKAGE)
     3. Install `sudo apt install ros-kinetic-turtlebot-*` (or rosdep -i install PACKAGE)
     4. Install `sudo apt install ros-kinetic-kobuki-*` (or rosdep -i install PACKAGE)
-2. Run `catkin_make` to build packages, then run `sh home_service.sh`
+2. Home service:
+    1. Run `catkin_make` to build packages, then run `sh home_service.sh`
+3. Test SLAM:
+    1. Opening my small world, RVIZ and keyboard teleop
+    2. <b>gmapping</b> is used for SLAM
+    3. Run `sh test_slam.sh` to test SLAM
