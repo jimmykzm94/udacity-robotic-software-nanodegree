@@ -45,7 +45,7 @@ Run `catkin_make` to build packages
 
 ### Test SLAM
 #### Note
-1. gmapping is used for SLAM. It is a ROS package that contains Grid-based FastSLAM algorithm to map environment. Using slam_gmapping ROS node, we are able to map 2D occupancy grid map from mobile robot's odometry and laser data.
+1. gmapping is used for SLAM. It is a ROS package that uses Grid-based FastSLAM algorithm to map environment. Using slam_gmapping ROS node, we are able to map 2D occupancy grid map from mobile robot's odometry and laser data.
 
 #### Run
 Run `sh test_slam.sh` to test SLAM
