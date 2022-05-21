@@ -50,3 +50,8 @@ Open another terminal to use keyboard control:
     2. AMCL is used for localization
     3. Use 2D Nav Goal in RVIZ to navigate robot to desired goal
     4. Run `sh test_navigation.sh` to test robot navigation
+5. Test pick objects
+    1. Opening my small world and RVIZ
+    2. AMCL is used for localization
+    3. Once pick_objects package is run, the robot will pick up an object and drop to a desired goal
+    4. Run `sh pick_objects.sh` to simulate robot pick-up and dropping object
