@@ -45,7 +45,7 @@ Run `catkin_make` to build packages
 
 ### Test SLAM
 #### Note
-1. <b>gmapping</b> is used for SLAM.
+1. gmapping is used for SLAM. It is a ROS package that contains Grid-based FastSLAM algorithm to map environment. Using slam_gmapping ROS node, we are able to map 2D occupancy grid map from mobile robot's odometry and laser data.
 
 #### Run
 Run `sh test_slam.sh` to test SLAM
@@ -59,8 +59,8 @@ Run `sh test_navigation.sh` to test robot navigation
 
 ### Test pick objects
 #### Note
-1. <b>AMCL</b> is used for localization.
-2. Once pick_objects package is run, the robot will pick up an object and drop to a desired goal.
+1. AMCL (Adaptive Monte Carlo localization) is used for localization. It is part of ROS package and is an improved algorithm from MCL, which basically uses particle filter to localize mobile robot pose. For AMCL, it dynamically adjusts the number of particles over time through navigating around the map. Thus, the algorithm is less computational expensive than MCL. For this ROS node, it will collect laser data from mobile robot and output pose estimate.
+2. Once pick_objects package is run in this project, the robot will pick up an object and drop to a desired goal.
 #### Run
 Run `sh pick_objects.sh` to simulate robot pick-up and dropping object
 
