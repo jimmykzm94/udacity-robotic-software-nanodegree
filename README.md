@@ -45,3 +45,8 @@ Open another terminal to use keyboard control:
     1. Opening my small world, RVIZ and keyboard teleop
     2. <b>gmapping</b> is used for SLAM
     3. Run `sh test_slam.sh` to test SLAM
+4. Test navigation:
+    1. Opening my small world and RVIZ
+    2. AMCL is used for localization
+    3. Use 2D Nav Goal in RVIZ to navigate robot to desired goal
+    4. Run `sh test_navigation.sh` to test robot navigation
