@@ -1,8 +1,8 @@
 #!bin/sh
-xterm -e "source devel/setup.bash; roslaunch turtlebot_gazebo turtlebot_world.launch" &
+xterm -e "source devel/setup.bash; roslaunch my_robot world.launch" &
 sleep 5
-xterm -e "source devel/setup.bash; roslaunch turtlebot_gazebo amcl_demo.launch" &
+xterm -e "source devel/setup.bash; roslaunch my_robot amcl.launch" &
 sleep 5
-xterm -e "source devel/setup.bash; roslaunch turtlebot_rviz_launchers view_navigation.launch" &
+xterm -e "source devel/setup.bash; rosrun rviz rviz -d "src/my_robot/rviz/world_marker.rviz"" &
 sleep 5
-xterm -e "source devel/setup.bash; rosrun add_markers add_markers"
+xterm -e "source devel/setup.bash; rosrun add_markers add_markers_home_sim"

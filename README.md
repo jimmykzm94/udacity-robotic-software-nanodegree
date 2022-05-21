@@ -55,3 +55,8 @@ Open another terminal to use keyboard control:
     2. AMCL is used for localization
     3. Once pick_objects package is run, the robot will pick up an object and drop to a desired goal
     4. Run `sh pick_objects.sh` to simulate robot pick-up and dropping object
+6. Test adding markers
+    1. In small world, the blue cube will be displayed to be picked-up for 5 seconds
+    2. The cube will be hidden, indicating it is already picked-up
+    3. After 5 seconds, the green cube will be displayed
+    4. Run `sh add_markers.sh` to simulate
