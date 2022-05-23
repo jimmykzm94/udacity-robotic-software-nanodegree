@@ -1,5 +1,8 @@
 # Udacity robotic software nanodegree
 
+## Short note
+The Gazebo or ROS command may not work properly on VSCode terminal. Please use Terminal window instead.
+
 ## Project 1
 Note to myself:
 1. When creating plugin, insert `<plugin name='<name>' filename='<build-filename>.so'/>` after `<world name='default'>` in world file.
@@ -13,11 +16,13 @@ Ball chaser
 2. Open another terminal, run `roslaunch ball_chaser drive_robot.launch` to auto-chase the white ball.
 
 ## Project 3
+### Prerequisite
+1. teleop_twist_keyboard (update submodule before using it)
+2. sudo apt install ros-kinetic-map-server (first time only)
+3. sudo apt install ros-kinetic-amcl (first time only)
+
 ### Create map
 Run `roslaunch pgm_map_creator request_publisher.launch`
-
-### Submodule
-1. teleop_twist_keyboard (update submodule before using it)
 
 ### Run simulation
 Open terminal and type:
