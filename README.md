@@ -1,5 +1,16 @@
 # Udacity robotic software nanodegree
 
+## Spec used for this project
+1. Ubuntu Xenial 16.04.7 LTS (VMWare Fusion 11)
+2. Gazebo 7
+3. ROS Kinetic
+
+## Installation of Gazebo
+1. Go to https://classic.gazebosim.org/tutorials?tut=install_ubuntu and follow the instructions from alternative-installation and replace `sudo apt-get install gazebo7` command.
+
+## Installation of ROS
+1. Go to http://wiki.ros.org/kinetic/Installation/Ubuntu and follow the instructions.
+
 ## Short note
 The Gazebo or ROS command may not work properly on VSCode terminal. Please use Terminal window instead.
 
